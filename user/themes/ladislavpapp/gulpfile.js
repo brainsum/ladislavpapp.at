@@ -18,6 +18,7 @@ const paths = {
   jsDist: './js/dist/',
   img: './images/',
   twig: './templates/**/*.html.twig',
+  markdown: '../../pages/**/*.md',
 };
 
 /**
@@ -146,6 +147,17 @@ function scriptsLintTask() {
 function twigTask() {
   return gulp
     .src(paths.twig)
+    .pipe(browserSync.stream());
+}
+
+/**
+ * Twig Task
+ *
+ * @return {object} Watched markdown (content) files.
+*/
+function markdownTask() {
+  return gulp
+    .src(paths.markdown)
     .pipe(browserSync.stream());
 }
 
