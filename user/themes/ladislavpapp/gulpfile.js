@@ -17,6 +17,7 @@ const paths = {
   jsSrc: './js/src/*.js',
   jsDist: './js/dist/',
   img: './images/',
+  twig: './templates/**/*.html.twig',
 };
 
 /**
@@ -138,6 +139,17 @@ function scriptsLintTask() {
 }
 
 /**
+ * Twig Task
+ *
+ * @return {object} Watched twig template files.
+*/
+function twigTask() {
+  return gulp
+    .src(paths.twig)
+    .pipe(browserSync.stream());
+}
+
+/**
  * BrowserSync Task
  *
  * Watching Sass and JavaScript source files for changes.
@@ -154,17 +166,7 @@ function browserSyncTask(done) {
   });
   gulp.watch(paths.sass, sassDevTask);
   gulp.watch(paths.jsSrc, scriptsTask);
-  done();
-}
-
-/**
- * BrowserSync Reload Task
- *
- * BrowserSync will reload all synced browsers.
- * @param {function} done Reload event.
- */
-function browserSyncReloadTask(done) {
-  browserSync.reload();
+  gulp.watch(paths.twig, twigTask);
   done();
 }
 
