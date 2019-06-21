@@ -1,0 +1,58 @@
+/**
+ ******************************************************************************
+ *** TABLE COMPONENT ***
+ ******************************************************************************
+ *
+ * Css class based table themings, like responsive table.
+ */
+
+/**
+ ** Settings **
+ */
+
+/**
+ * Responsive Table Component
+ *
+ * Responsive CSS only table component based on Filament Group's Tablesaw.
+ * There is no any styling only layout needed properties.
+ * @see `3.base/_base.table.scss` for base theming `<table>` element.
+ * @link https://github.com/filamentgroup/tablesaw
+ *
+ * @example
+ *   <table class="c-table">
+ *     <thead>
+ *       <tr>
+ *         <th>name</th>
+ *         <th>genre</th>
+ *         <th>release date</th>
+ *       </tr>
+ *     </thead>
+ *     <tbody>
+ *       <tr>
+ *         <td>
+ *           <b class="c-table__cell-label">name</b>
+ *           <span class="c-table__cell-content">The Shawshank Redemption</b>
+ *         </td>
+ *         <td>
+ *           <b class="c-table__cell-label">genre</b>
+ *           <span class="c-table__cell-content">Crime, Drama</b>
+ *         </td>
+ *         <td>
+ *           <b class="c-table__cell-label">release date</b>
+ *           <span class="c-table__cell-content">14 October 1994</b>
+ *         </td>
+ *       </tr>
+ *     </tbody>
+ *   </table>
+ */
+
+$components-responsive-table                  : true;
+$components-responsive-table-label-padding    : 0 0.6em 0 0;
+$components-responsive-table-label-width      : 30%;
+$components-responsive-table-content-width    : 67%;
+
+/**
+ * Import Table Component from Shake.sass.
+ */
+
+@import "node_modules/shake.sass/5.components/components.table";

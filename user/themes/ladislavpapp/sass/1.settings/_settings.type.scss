@@ -1,0 +1,196 @@
+/**
+ ******************************************************************************
+ *** TYPE SETTINGS ***
+ ******************************************************************************
+ *
+ * Global typography settings.
+ */
+
+/**
+ * Font family settings
+ *
+ * Recommended to use only system fonts. If you need to use custom webfont you
+ * can use as fallback font-stack.
+ */
+
+$font-family--system:
+  -apple-system,
+  system-ui,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
+
+$font-family--monospace:
+  SFMono-Regular,
+  Menlo,
+  Monaco,
+  "Segoe UI Mono",
+  Consolas,
+  "Liberation Mono",
+  "Courier New",
+  monospace;
+
+$global-font-family         : $font-family--system;
+
+/**
+ * Font weights
+ *
+ * We store font-weight for global font-family.
+ * Font-weight could be different in each font-families; change it to your
+ * font-family.
+ */
+
+$font-weight--light         : 300;
+$font-weight--normal        : 400;
+$font-weight--medium        : 500;
+$font-weight--bold          : 700;
+$font-weight--black         : 900;
+
+/**
+ * Line-height
+ */
+
+$global-line-height         : 1.2;
+
+/**
+* Font size settings
+*
+* We use Modularscale Tool for calculated font sizes.
+* @see https://www.modularscale.com/?12,14,16&px&1.5 for selected Modular
+* Scale table
+*/
+
+$type-12                    : ms(0);
+$type-14                    : ms(1);
+$type-16                    : ms(2);
+$type-18                    : ms(3);
+$type-21                    : ms(4);
+$type-24                    : ms(5);
+$type-27                    : ms(6);
+$type-31                    : ms(7);
+$type-36                    : ms(8);
+$type-40                    : ms(9);
+$type-48                    : ms(10);
+$type-54                    : ms(11);
+$type-60                    : ms(12);
+$type-71                    : ms(13);
+
+/**
+ * Responsive font sizes
+ *
+ * @example
+ *   breakpoint-name: ( font-size, optional-line-height )
+ *
+ * Breakpoint names come from $global-breakpoints declared in
+ * `1.settings/_settings.breakpoints`.
+ *
+ * 'null' means no breakpoint (default)
+ */
+
+// Body (global) font-size
+$global-font-size: (
+  null: (
+    $type-14,
+    1.6
+  ),
+  medium: (
+    $type-16
+  )
+);
+
+// Heading font sizes
+$heading1-font-size: (
+  null: (
+    $type-40
+  ),
+  medium: (
+    $type-60
+  )
+);
+
+$heading2-font-size: (
+  null: (
+    $type-27
+  ),
+  medium: (
+    $type-54
+  )
+);
+
+$heading3-font-size: (
+  null: (
+    $type-24
+  ),
+  medium: (
+    $type-36
+  )
+);
+
+$heading4-font-size: (
+  null: (
+    $type-21
+  ),
+  medium: (
+    $type-27
+  )
+);
+
+$heading5-font-size: (
+  null: (
+    $type-18
+  ),
+  medium: (
+    $type-24
+  )
+);
+
+$heading6-font-size: $type-12;
+
+// Paragraph font-size
+$paragraph-font-size: (
+  null: (
+    $type-14,
+    1.71
+  ),
+  medium: (
+    $type-16,
+    2.25
+  )
+);
+
+// Code font-size
+$code-font-size: (
+  null: (
+    $type-14 2
+  ),
+  medium: (
+    $type-16
+  )
+);
+
+// Form input font-size
+$input-font-size: (
+  null: (
+    $type-16 1.5
+  ),
+  medium: (
+    $type-16 1.2
+  )
+);
+
+// Form label font-size
+$label-font-size: (
+  null: (
+    $type-14 1.5
+  ),
+  medium: (
+    $type-14 1.2
+  )
+);

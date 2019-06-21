@@ -1,0 +1,21 @@
+/**
+ ******************************************************************************
+ *** COLOR SETTINGS ***
+ ******************************************************************************
+ *
+ * Only global color variables. Local color variables you can find in module
+ * files in `3.base` or `5.components` directories.
+ * Only assigned colors. You can't use any color tools here.
+ */
+
+/**
+ * Global colors
+ */
+
+$color-brand                : #02baf2;
+$color-primary              : $color-brand;
+$color-secondary            : #2ecc71;
+$color-tertiary             : #a88cd5;
+
+$global-color               : black;
+$global-background          : white;

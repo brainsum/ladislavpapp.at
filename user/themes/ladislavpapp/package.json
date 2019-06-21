@@ -1,0 +1,52 @@
+{
+  "name": "ladislavpapp",
+  "version": "1.0.0",
+  "description": "The **Ladislavpapp** Theme is for [Grav CMS](http://github.com/getgrav/grav). This README.md file should be modified to describe the features, installation, configuration, and general usage of this theme.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "prod": "gulp prod",
+    "lint": "gulp lint",
+    "sass-dev": "gulp sassDev",
+    "sass-prod": "gulp sassProd",
+    "scripts": "gulp scripts",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainsum/ladislavpapp.at.git"
+  },
+  "keywords": [
+    "javascript",
+    "gulp.js",
+    "sass",
+    "stylelint",
+    "eslint"
+  ],
+  "author": "Krisztian Pinter <kpinter@brainsum.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brainsum/ladislavpapp.at/issues"
+  },
+  "homepage": "https://github.com/brainsum/ladislavpapp.at#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "gulp": "^4.0.2",
+    "gulp-css-purge": "^3.0.9",
+    "gulp-eslint": "^5.0.0",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "shake.sass": "^1.1.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-scss": "^3.8.0"
+  }
+}

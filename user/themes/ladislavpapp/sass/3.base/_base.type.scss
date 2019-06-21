@@ -1,0 +1,58 @@
+/**
+ ******************************************************************************
+ *** TYPE ELEMENT ***
+ ******************************************************************************
+ *
+ * Theming text elements.
+ */
+
+/**
+ ** Settings **
+ */
+
+/**
+ * Global selected text
+ */
+
+$base-selected-text             : true;
+$base-selected-text-color       : white;
+$base-selected-text-background  : $color-tertiary;
+
+/**
+ * Paragraph margins
+ */
+
+$base-paragraph-margins         : true;
+$base-paragraph-margin-size     : 1em;
+
+/**
+ * Inline and Code Blocks
+ */
+
+$base-code-tab-size             : 4;
+
+/**
+ * Global Link Element
+ */
+
+// :link, :visited states
+$base-link-color                : $color-primary;
+
+// :hover, :focus, :active states
+$base-link-color-accent         : darken($base-link-color, 15%);
+
+// underlined links
+$base-link-text-decoration      : none;
+
+// outlined links in :focus state
+$base-link-outline              : none;
+
+/**
+ * Import Type element from Shake.sass.
+ */
+
+@import "node_modules/shake.sass/3.base/base.type";
+
+/**
+ * Theming other inline text html elements.
+ */

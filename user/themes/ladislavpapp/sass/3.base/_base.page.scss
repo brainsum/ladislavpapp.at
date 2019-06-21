@@ -1,0 +1,24 @@
+/**
+ ******************************************************************************
+ *** PAGE ELEMENT ***
+ ******************************************************************************
+ *
+ * Theming page related and all (*) elements.
+ */
+
+/**
+ * Settings
+ */
+
+$body-color                 : $global-color;
+$body-background            : $global-background;
+
+/**
+ * Import Page Element from Shake.sass.
+ */
+
+@import "node_modules/shake.sass/3.base/base.page";
+
+/**
+ * Other page element related rules.
+ */
