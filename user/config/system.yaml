@@ -1,4 +1,14 @@
 absolute_urls: false
+timezone: 'Europe/Vienna'
+default_locale: 'de_AT'
+
+languages:
+  supported:
+    - de
+    - sk
+    - hu
+    - en
+  include_default_lang: false
 
 home:
   alias: '/home'
