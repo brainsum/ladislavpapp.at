@@ -21,10 +21,8 @@
 
 $global-breakpoints: (
   small  : "screen and (min-width: 480px)",
-  medium : "screen and (min-width: 768px)",
-  large  : "screen and (min-width: 1024px)",
-  xlarge : "screen and (min-width: 1200px)",
-  xxlarge: "screen and (min-width: 1400px)"
+  medium : "screen and (min-width: 620px)",
+  large  : "screen and (min-width: 980px)"
 );
 
 /**

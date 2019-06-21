@@ -18,8 +18,8 @@ tests/cache/*
 tests/error.log
 system/templates/testing/*
 
-# Created by https://www.gitignore.io/api/node,code,linux,macos,windows,composer,sublimetext,phpstorm+all
-# Edit at https://www.gitignore.io/?templates=node,code,linux,macos,windows,composer,sublimetext,phpstorm+all
+# Created by https://www.gitignore.io/api/node,sass,code,linux,macos,windows,composer,sublimetext,phpstorm+all
+# Edit at https://www.gitignore.io/?templates=node,sass,code,linux,macos,windows,composer,sublimetext,phpstorm+all
 
 ### Code ###
 .vscode/*
@@ -248,6 +248,12 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
 ### SublimeText ###
 # Cache files for Sublime Text
 *.tmlanguage.cache
@@ -305,4 +311,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/node,code,linux,macos,windows,composer,sublimetext,phpstorm+all
+# End of https://www.gitignore.io/api/node,sass,code,linux,macos,windows,composer,sublimetext,phpstorm+all

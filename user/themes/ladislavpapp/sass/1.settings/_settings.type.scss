@@ -12,21 +12,13 @@
  * Recommended to use only system fonts. If you need to use custom webfont you
  * can use as fallback font-stack.
  */
+$font-family--serif:
+  Georgia,
+  Times,
+  "Times New Roman",
+  serif;
 
-$font-family--system:
-  -apple-system,
-  system-ui,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  "Helvetica Neue",
-  Arial,
-  sans-serif,
-  "Apple Color Emoji",
-  "Segoe UI Emoji",
-  "Segoe UI Symbol",
-  "Noto Color Emoji";
-
+// Don't remove it, it's used by css normalizer!
 $font-family--monospace:
   SFMono-Regular,
   Menlo,
@@ -37,7 +29,7 @@ $font-family--monospace:
   "Courier New",
   monospace;
 
-$global-font-family         : $font-family--system;
+$global-font-family         : $font-family--serif;
 
 /**
  * Font weights
@@ -46,41 +38,13 @@ $global-font-family         : $font-family--system;
  * Font-weight could be different in each font-families; change it to your
  * font-family.
  */
-
-$font-weight--light         : 300;
-$font-weight--normal        : 400;
-$font-weight--medium        : 500;
-$font-weight--bold          : 700;
-$font-weight--black         : 900;
+$font-weight--normal        : normal;
+$font-weight--bold          : bold;
 
 /**
  * Line-height
  */
-
 $global-line-height         : 1.2;
-
-/**
-* Font size settings
-*
-* We use Modularscale Tool for calculated font sizes.
-* @see https://www.modularscale.com/?12,14,16&px&1.5 for selected Modular
-* Scale table
-*/
-
-$type-12                    : ms(0);
-$type-14                    : ms(1);
-$type-16                    : ms(2);
-$type-18                    : ms(3);
-$type-21                    : ms(4);
-$type-24                    : ms(5);
-$type-27                    : ms(6);
-$type-31                    : ms(7);
-$type-36                    : ms(8);
-$type-40                    : ms(9);
-$type-48                    : ms(10);
-$type-54                    : ms(11);
-$type-60                    : ms(12);
-$type-71                    : ms(13);
 
 /**
  * Responsive font sizes
@@ -93,104 +57,16 @@ $type-71                    : ms(13);
  *
  * 'null' means no breakpoint (default)
  */
-
 // Body (global) font-size
-$global-font-size: (
-  null: (
-    $type-14,
-    1.6
-  ),
-  medium: (
-    $type-16
-  )
-);
+$global-font-size: 1.4rem;
 
 // Heading font sizes
-$heading1-font-size: (
-  null: (
-    $type-40
-  ),
-  medium: (
-    $type-60
-  )
-);
-
-$heading2-font-size: (
-  null: (
-    $type-27
-  ),
-  medium: (
-    $type-54
-  )
-);
-
-$heading3-font-size: (
-  null: (
-    $type-24
-  ),
-  medium: (
-    $type-36
-  )
-);
-
-$heading4-font-size: (
-  null: (
-    $type-21
-  ),
-  medium: (
-    $type-27
-  )
-);
-
-$heading5-font-size: (
-  null: (
-    $type-18
-  ),
-  medium: (
-    $type-24
-  )
-);
-
-$heading6-font-size: $type-12;
+$heading1-font-size: 3.3rem;
+$heading2-font-size: 2.8rem;
+$heading3-font-size: 2.4rem;
+$heading4-font-size: 2rem;
+$heading5-font-size: 1.8rem;
+$heading6-font-size: 1.6rem;
 
 // Paragraph font-size
-$paragraph-font-size: (
-  null: (
-    $type-14,
-    1.71
-  ),
-  medium: (
-    $type-16,
-    2.25
-  )
-);
-
-// Code font-size
-$code-font-size: (
-  null: (
-    $type-14 2
-  ),
-  medium: (
-    $type-16
-  )
-);
-
-// Form input font-size
-$input-font-size: (
-  null: (
-    $type-16 1.5
-  ),
-  medium: (
-    $type-16 1.2
-  )
-);
-
-// Form label font-size
-$label-font-size: (
-  null: (
-    $type-14 1.5
-  ),
-  medium: (
-    $type-14 1.2
-  )
-);
+$paragraph-font-size: 1.2;
