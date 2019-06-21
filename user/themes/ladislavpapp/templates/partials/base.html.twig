@@ -29,38 +29,49 @@
 
 <body id="top" class="{{ page.header.body_classes }}">
 
-  {% block header %}
-    <div class="header">
-      <div class="wrapper padding">
+  <div class="o-container">
+    <div class="o-grid">
+      <aside class="o-grid__item sidebar">
         <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-          <i class="fa fa-rebel"></i>
           {{ config.site.title }}
         </a>
-        {% block header_navigation %}
-          <nav class="main-nav">
-            {% include 'partials/navigation.html.twig' %}
-          </nav>
+        slogen
+      </aside>
+
+      <section class="o-grid__item page">
+        {% block header %}
+          <div class="header">
+            <div class="wrapper padding">
+              {% block header_navigation %}
+                <nav class="main-nav">
+                  {% include 'partials/navigation.html.twig' %}
+                </nav>
+              {% endblock %}
+
+              {% include 'partials/langswitcher.html.twig' %}
+            </div>
+          </div>
         {% endblock %}
-      </div>
-    </div>
-  {% endblock %}
 
-  {% block body %}
-    <section id="body">
-      <div class="wrapper padding">
-        {% block content %}{% endblock %}
-      </div>
-    </section>
-  {% endblock %}
-
-  {% block footer %}
-    <div class="footer text-center">
-      <div class="wrapper padding">
-        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a
-            href="http://www.rockettheme.com">RocketTheme</a>.</p>
-      </div>
+        {% block body %}
+          <section id="body">
+            <div class="wrapper padding">
+              {% block content %}{% endblock %}
+            </div>
+          </section>
+        {% endblock %}
+      </section>
     </div>
-  {% endblock %}
+
+    {% block footer %}
+      <div class="footer text-center">
+        <div class="wrapper padding">
+          <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a
+              href="http://www.rockettheme.com">RocketTheme</a>.</p>
+        </div>
+      </div>
+    {% endblock %}
+  </div>
 
   {% block bottom %}
     {{ assets.js('bottom') }}
