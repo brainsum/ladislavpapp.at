@@ -13,9 +13,8 @@
  * can use as fallback font-stack.
  */
 $font-family--serif:
+  "PT Sans",
   Georgia,
-  Times,
-  "Times New Roman",
   serif;
 
 // Don't remove it, it's used by css normalizer!
@@ -38,8 +37,8 @@ $global-font-family         : $font-family--serif;
  * Font-weight could be different in each font-families; change it to your
  * font-family.
  */
-$font-weight--normal        : normal;
-$font-weight--bold          : bold;
+$font-weight--normal        : 400;
+$font-weight--bold          : 700;
 
 /**
  * Line-height
