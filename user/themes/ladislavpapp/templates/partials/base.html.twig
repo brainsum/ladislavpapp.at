@@ -31,45 +31,38 @@
 
   <div class="o-container">
     <div class="o-grid">
-      <aside class="o-grid__item sidebar">
-        <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-          {{ config.site.title }}
-        </a>
-        slogen
+      <aside class="o-grid__item c-sidebar">
+        {% include 'partials/sidebar.html.twig' %}
       </aside>
 
-      <section class="o-grid__item page">
+      <section class="o-grid__item c-page">
         {% block header %}
           <div class="header">
-            <div class="wrapper padding">
-              {% block header_navigation %}
-                <nav class="main-nav">
-                  {% include 'partials/navigation.html.twig' %}
-                </nav>
-              {% endblock %}
+            {% block header_navigation %}
+              <nav class="main-nav">
+                {% include 'partials/navigation.html.twig' %}
+              </nav>
+            {% endblock %}
 
-              {% include 'partials/langswitcher.html.twig' %}
-            </div>
+            {% include 'partials/langswitcher.html.twig' %}
           </div>
         {% endblock %}
 
         {% block body %}
           <section id="body">
-            <div class="wrapper padding">
-              {% block content %}{% endblock %}
-            </div>
+            {% block content %}{% endblock %}
           </section>
         {% endblock %}
       </section>
     </div>
 
     {% block footer %}
-      <div class="footer text-center">
-        <div class="wrapper padding">
-          <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a
-              href="http://www.rockettheme.com">RocketTheme</a>.</p>
-        </div>
-      </div>
+      <footer class="c-footer">
+        <p>
+          <span class="copyright">© Copyright {{ "now"|date("Y") }} ladislavpapp.at</span>
+          <span class="madeby"><a href="//www.brainsum.sk" title="Web stránky, Web aplikácie, Komplexné systémy, Drupal riešenia | Brainsum | Bratislava" rel="author">web design & development: brainsum</a></span>
+        </p>
+      </footer>
     {% endblock %}
   </div>
 

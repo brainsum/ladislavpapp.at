@@ -1,12 +1,13 @@
 /**
  ******************************************************************************
- *** PAGE COMPONENT ***
+ *** FOOTER COMPONENT ***
  ******************************************************************************
  *
- * Theming page (main area).
+ * Theming page footer.
  */
 
-.o-grid__item.c-page {
-  @include make-column();
-  @include column-size(8/12);
+.c-footer {
+  margin-left: 4 / 12 * 100%;
+  padding-left: $gutter--medium / 2;
+  padding-right: $gutter--medium / 2;
 }
