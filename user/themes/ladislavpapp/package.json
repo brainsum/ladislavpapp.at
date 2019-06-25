@@ -44,7 +44,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^9.0.0",
     "gulp-uglify": "^3.0.2",
-    "shake.sass": "^1.1.2",
+    "shake.sass": "^1.2.1",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-scss": "^3.8.0"
