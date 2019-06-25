@@ -1,0 +1,20 @@
+/**
+ ******************************************************************************
+ *** SLOGAN COMPONENT ***
+ ******************************************************************************
+ *
+ * Theming slogan.
+ */
+
+.c-slogan {
+  color: $color-brand;
+  border-top: 1px solid $color-secondary;
+  border-bottom: 1px solid $color-secondary;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  .letter--big {
+    font-size: 2.8rem;
+  }
+}

@@ -49,7 +49,7 @@
         {% block header %}
           <div class="header">
             {% block header_navigation %}
-              <nav class="main-nav">
+              <nav class="c-navigation">
                 {% include 'partials/navigation.html.twig' %}
               </nav>
             {% endblock %}
@@ -70,7 +70,7 @@
       <footer class="c-footer">
         <p>
           <span class="copyright">© Copyright {{ "now"|date("Y") }} ladislavpapp.at</span>
-          <span class="madeby"><a href="//www.brainsum.sk" title="Web stránky, Web aplikácie, Komplexné systémy, Drupal riešenia | Brainsum | Bratislava" rel="author">web design & development: brainsum</a></span>
+          <span class="madeby"><a href="//www.brainsum.sk" target="_blank" title="Web stránky, Web aplikácie, Komplexné systémy, Drupal riešenia | Brainsum | Bratislava" rel="author noopener">web design & development: brainsum</a></span>
         </p>
       </footer>
     {% endblock %}

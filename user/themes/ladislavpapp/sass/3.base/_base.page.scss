@@ -10,6 +10,14 @@
  * Settings
  */
 
+/**
+ * Body colors
+ *
+ * Set text- and background-color to body. Turn this off if you need anything
+ * else background property than background-color, like background-image.
+ */
+
+$base-body-colors           : false;
 $body-color                 : $global-color;
 $body-background            : $global-background;
 
@@ -22,3 +30,9 @@ $body-background            : $global-background;
 /**
  * Other page element related rules.
  */
+
+body {
+  color: $global-color;
+  background: $global-background url(../images/site--background.jpg) no-repeat center;
+  padding-top: 7.6rem;
+}

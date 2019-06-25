@@ -8,6 +8,32 @@
 
 .c-footer {
   margin-left: 4 / 12 * 100%;
-  padding-left: $gutter--medium / 2;
-  padding-right: $gutter--medium / 2;
+  padding: 1.4rem $gutter--medium / 2;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 2;
+
+  .copyright,
+  .madeby {
+    display: block;
+  }
+
+  a {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .madeby {
+    font-size: 1.1rem;
+  }
 }

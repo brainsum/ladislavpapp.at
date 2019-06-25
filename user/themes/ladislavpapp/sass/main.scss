@@ -73,7 +73,7 @@
 
 @import "4.objects/objects.container";
 @import "4.objects/objects.grid";
-// @import "4.objects/objects.media";
+@import "4.objects/objects.media";
 
 /**
  * Components
@@ -86,8 +86,10 @@
  */
 
 @import "5.components/components.footer";
+@import "5.components/components.navigation";
 @import "5.components/components.page";
 @import "5.components/components.sidebar";
+@import "5.components/components.slogan";
 // @import "5.components/components.table";
 
 /**

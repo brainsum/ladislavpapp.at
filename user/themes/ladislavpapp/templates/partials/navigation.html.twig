@@ -2,19 +2,19 @@
   {% for p in page.children.visible %}
     {% set current_page = (p.active or p.activeChild) ? 'is-active' : '' %}
     {% if p.children.visible.count > 0 %}
-      <li class="has-children {{ current_page }}">
-        <a href="{{ p.url }}">
+      <li class="c-navigation__item has-children {{ current_page }}">
+        <a class="c-navigation__link {{ current_page }}" href="{{ p.url }}">
           {{ p.menu }}
         </a>
 
-        <ul>
+        <ul class="c-navigation__list">
           {{ _self.loop(p) }}
         </ul>
       </li>
 
     {% else %}
-      <li class="{{ current_page }}">
-        <a href="{{ p.url }}">
+      <li class="c-navigation__item {{ current_page }}">
+        <a class="c-navigation__link {{ current_page }}" href="{{ p.url }}">
           {{ p.menu }}
         </a>
       </li>
@@ -22,15 +22,15 @@
   {% endfor %}
 {% endmacro %}
 
-<ul>
+<ul class="c-navigation__list">
   {% if theme_config.dropdown.enabled %}
     {{ _self.loop(pages) }}
 
   {% else %}
     {% for page in pages.children.visible %}
-      {% set current_page = (page.active or page.activeChild) ? 'is-selected' : '' %}
-      <li class="{{ current_page }}">
-        <a href="{{ page.url }}">
+      {% set current_page = (page.active or page.activeChild) ? 'is-active' : '' %}
+      <li class="c-navigation__item {{ current_page }}">
+        <a class="c-navigation__link {{ current_page }}" href="{{ page.url }}">
           {{ page.menu }}
         </a>
       </li>
@@ -38,8 +38,8 @@
   {% endif %}
 
   {% for mitem in site.menu %}
-    <li>
-      <a href="{{ mitem.url }}">
+    <li class="c-navigation__item">
+      <a class="c-navigation__link" href="{{ mitem.url }}">
         {{ mitem.text }}
       </a>
     </li>

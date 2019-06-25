@@ -13,9 +13,23 @@
  * can use as fallback font-stack.
  */
 $font-family--serif:
-  "PT Sans",
+  "PT Serif",
   Georgia,
   serif;
+
+$font-family--system:
+  -apple-system,
+  system-ui,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
 
 // Don't remove it, it's used by css normalizer!
 $font-family--monospace:
@@ -27,6 +41,8 @@ $font-family--monospace:
   "Liberation Mono",
   "Courier New",
   monospace;
+
+$font-family--sans          : "Fira Sans", "Trebuchet MS", $font-family--system;
 
 $global-font-family         : $font-family--serif;
 
