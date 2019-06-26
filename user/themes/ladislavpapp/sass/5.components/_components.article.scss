@@ -1,0 +1,45 @@
+/**
+ ******************************************************************************
+ *** ARTICLE COMPONENT ***
+ ******************************************************************************
+ *
+ * Theming basic article content.
+ */
+
+.c-article {
+  line-height: 2;
+  padding-bottom: 2em;
+
+  *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 1.2rem;
+  }
+
+  p {
+    text-align: justify;
+    margin: 0.5rem 0 1.3rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.4em;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 1em 0 0.5em;
+  }
+
+  .download {
+    display: inline-block;
+    margin-top: 1em;
+    color: #f00;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:active {
+      opacity: 0.75;
+    }
+  }
+}

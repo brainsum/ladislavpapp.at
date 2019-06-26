@@ -36,7 +36,7 @@ $base-code-tab-size             : 4;
  */
 
 // :link, :visited states
-$base-link-color                : $color-primary;
+$base-link-color                : #f00;
 
 // :hover, :focus, :active states
 $base-link-color-accent         : darken($base-link-color, 15%);
@@ -79,4 +79,14 @@ h5 {
 
 h6 {
   font-size: $heading6-font-size;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+mark {
+  background: none;
+  color: lighten($color-brand, 10%);
+  font-weight: 700;
 }

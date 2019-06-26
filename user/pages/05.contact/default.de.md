@@ -4,7 +4,7 @@ body_classes: contact
 slug: Kontakt
 ---
 
-# Kontakt {.page__title}
+# Kontakt {.c-page__title}
 
 **Adresse:**
 Ladislav Papp

@@ -4,4 +4,4 @@ body_classes: gallery
 slug: photogallery
 ---
 
-# Photogallery {.page__title}
+# Photogallery {.c-page__title}

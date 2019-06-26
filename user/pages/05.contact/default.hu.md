@@ -4,7 +4,7 @@ body_classes: contact
 slug: kapcsolat
 ---
 
-# Kapcsolat {.page__title}
+# Kapcsolat {.c-page__title}
 
 Papp László
 Leipziger Platz 10

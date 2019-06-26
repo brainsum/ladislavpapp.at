@@ -4,7 +4,7 @@ body_classes: about
 slug: ladislav-papp
 ---
 
-# Ladislav Papp {.page__title}
+# Ladislav Papp {.c-page__title}
 
 Ladislav Papp, Harfenist, wurde am 1. November 1979 in Bratislava, Slowakei,
 geboren.
@@ -37,17 +37,17 @@ Als Solist tritt er nicht nur in Slowakei (Bratislavské hudobné slávnosti) au
 sondern nahm er auch auf weiteren wichtigen Veranstaltungen und Festivals in
 Prag, Budapest und Genf teil.
 
-Im Jahr 1999 brachte Ladislav Papp seine erste CD mit dem Titel „Harp is my
-No.1“ heraus.
+Im Jahr 1999 brachte Ladislav Papp seine erste CD mit dem Titel „_Harp is my
+No.1_“ heraus.
 
 ## Wettbewerbe und Preise:
 
-- 1998\. Reinl-Preis International Wettbewerb, Wien (A) – 1. Preis
-- 1998\. Wettbewerb des Konservatoriums in Bratislava - 1. Preis
-- 1999\. Pressburger Musikfestival SK - Internationaler Wettbewerb der jungen
+- <mark>1998\.</mark> Reinl-Preis International Wettbewerb, Wien (A) – 1. Preis
+- <mark>1998\.</mark> Wettbewerb des Konservatoriums in Bratislava - 1. Preis
+- <mark>1999\.</mark> Pressburger Musikfestival SK - Internationaler Wettbewerb der jungen
 Interpreten l. Preis
-- 2001\. Mitteleuropäischer Festival der Konzertkunsts, Žilina (SK) –
+- <mark>2001\.</mark> Mitteleuropäischer Festival der Konzertkunsts, Žilina (SK) –
 Kritikerpreis
-- 2002\. Kiwanis Musikpreis für Harfe, Zürich (CH) – 1. Preis
+- <mark>2002\.</mark> Kiwanis Musikpreis für Harfe, Zürich (CH) – 1. Preis
 
-**[Download curriculum vitae](Ladislav-Papp-cv-de.pdf)**
+**[Download curriculum vitae](Ladislav-Papp-cv-de.pdf) {.download}**

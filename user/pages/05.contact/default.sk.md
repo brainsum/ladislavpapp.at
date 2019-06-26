@@ -4,7 +4,7 @@ body_classes: contact
 slug: kontakt
 ---
 
-# Kontakt {.page__title}
+# Kontakt {.c-page__title}
 
 Ladislav Papp
 Leipziger Platz 10

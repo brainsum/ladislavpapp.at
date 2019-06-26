@@ -3,7 +3,7 @@ title: Home
 body_classes: is-front home
 ---
 
-# Home {.page__title}
+# Home {.c-page__title}
 
 Das Ehepaar Justina und Ladislav Papp lernte sich während des Studiums an der Musikhochschule in Zürich kennen und bereits seit dem Jahr 2000 bilden sie das Flöte-Harfe Duo.
 

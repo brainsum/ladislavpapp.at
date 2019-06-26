@@ -4,4 +4,4 @@ body_classes: audio
 slug: audio
 ---
 
-# Audio {.page__title}
+# Audio {.c-page__title}

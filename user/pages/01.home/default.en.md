@@ -3,7 +3,7 @@ title: Home
 body_classes: is-front home
 ---
 
-# Home {.page__title}
+# Home {.c-page__title}
 
 The married couple Justina and Ladislav Papp met while studying at the Zurich
 Conservatory and they formed the flute-harp duo in 2000. They currently live
