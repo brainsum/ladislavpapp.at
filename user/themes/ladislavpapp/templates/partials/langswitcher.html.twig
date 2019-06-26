@@ -6,7 +6,7 @@
  */
 #}
 
-<ul class="langswitcher">
+<ul class="c-langswitcher">
 {% for language in langswitcher.languages %}
 
     {% set show_language = true %}
@@ -31,7 +31,7 @@
     {% endif %}
 
     {% if show_language %}
-        <li><a href="{{ lang_url ~ uri.params }}" class="external{{ active_class }}">{{ language }}</a></li>
+        <li class="c-langswitcher__item"><a class="c-langswitcher__link external{{ active_class }}" href="{{ lang_url ~ uri.params }}">{{ language }}</a></li>
     {% endif %}
 
 {% endfor %}

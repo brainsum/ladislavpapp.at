@@ -1,0 +1,14 @@
+/**
+ ******************************************************************************
+ *** LANGSWITCHER COMPONENT ***
+ ******************************************************************************
+ *
+ * Theming langswitcher.
+ */
+
+.c-langswitcher {
+  @include navigation;
+
+  justify-content: flex-end;
+  padding: 1.4rem 0;
+}
