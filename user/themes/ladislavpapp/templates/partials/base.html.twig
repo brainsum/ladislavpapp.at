@@ -40,14 +40,14 @@
 <body id="top" class="{{ page.header.body_classes }}">
 
   <div class="o-container">
-    <div class="o-grid">
-      <aside class="o-grid__item c-sidebar">
+    <div class="c-site">
+      <aside class="c-site__item c-sidebar">
         {% include 'partials/sidebar.html.twig' %}
       </aside>
 
-      <section class="o-grid__item c-page">
+      <main class="c-site__item c-page">
         {% block header %}
-          <div class="header">
+          <header class="c-header">
             {% block header_navigation %}
               <nav class="c-navigation">
                 {% include 'partials/navigation.html.twig' %}
@@ -55,7 +55,7 @@
             {% endblock %}
 
             {% include 'partials/langswitcher.html.twig' %}
-          </div>
+          </header>
         {% endblock %}
 
         {% block body %}
@@ -63,7 +63,7 @@
             {% block content %}{% endblock %}
           </section>
         {% endblock %}
-      </section>
+      </main>
     </div>
 
     {% block footer %}

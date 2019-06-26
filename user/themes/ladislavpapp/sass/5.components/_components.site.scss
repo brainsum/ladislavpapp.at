@@ -1,12 +1,11 @@
 /**
  ******************************************************************************
- *** PAGE COMPONENT ***
+ *** SITE COMPONENT ***
  ******************************************************************************
  *
- * Theming page (main area).
+ * Theming site (outer wrapper).
  */
 
-.c-page {
-  @include make-column(7rem);
-  @include column-size(8/12);
+.c-site {
+  @include make-grid(0);
 }

@@ -1,12 +1,16 @@
 /**
  ******************************************************************************
- *** PAGE COMPONENT ***
+ *** LOGO COMPONENT ***
  ******************************************************************************
  *
- * Theming page (main area).
+ * Theming logo.
  */
 
-.c-page {
-  @include make-column(7rem);
-  @include column-size(8/12);
+.c-logo {
+  display: block;
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
 }

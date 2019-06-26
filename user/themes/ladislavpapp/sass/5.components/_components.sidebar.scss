@@ -6,7 +6,7 @@
  * Theming sidebar.
  */
 
-.o-grid__item.c-sidebar {
+.c-sidebar {
   @include make-column();
   @include column-size(4/12);
 
