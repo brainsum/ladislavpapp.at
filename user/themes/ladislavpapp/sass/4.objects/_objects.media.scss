@@ -187,7 +187,7 @@ $objects-media-gutter-extra         : ();
  * @type Boolean
  */
 
-$objects-media-reversed             : false;
+$objects-media-is-reversed          : false;
 
 /**
  * Alignment
@@ -200,7 +200,7 @@ $objects-media-reversed             : false;
  * @type Boolean
  */
 
-$objects-media-aligned              : false;
+$objects-media-is-aligned           : false;
 
 /**
  * Responsive
@@ -213,7 +213,7 @@ $objects-media-aligned              : false;
  * @type Boolean
  */
 
-$objects-media-responsive           : true;
+$objects-media-is-responsive        : false;
 
 /**
  * Collapsing
@@ -223,7 +223,7 @@ $objects-media-responsive           : true;
  * @type Number
  */
 
-$objects-media-collapse-at          : 76.7rem;
+$objects-media-collapse-at          : 47.93em; // 767px
 
 /**
  * Import Media Object from Shake.sass.

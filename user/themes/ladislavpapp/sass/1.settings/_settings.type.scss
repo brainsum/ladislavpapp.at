@@ -12,11 +12,14 @@
  * Recommended to use only system fonts. If you need to use custom webfont you
  * can use as fallback font-stack.
  */
+
+// Serif font stack
 $font-family--serif:
   "PT Serif",
   Georgia,
   serif;
 
+// System (sans-serif) font-stack
 $font-family--system:
   -apple-system,
   system-ui,
@@ -31,7 +34,7 @@ $font-family--system:
   "Segoe UI Symbol",
   "Noto Color Emoji";
 
-// Don't remove it, it's used by css normalizer!
+// Monospace font-stack: required by 3.base/_base.reset
 $font-family--monospace:
   SFMono-Regular,
   Menlo,
