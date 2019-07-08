@@ -1,6 +1,6 @@
 ---
 title: Audio
-body_classes: audio
+body_classes: body--audio
 slug: audio
 featherlight:
   active: true

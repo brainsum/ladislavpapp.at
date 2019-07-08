@@ -1,6 +1,6 @@
 ---
 title: Papp László
-body_classes: about
+body_classes: body--about
 slug: papp-laszlo
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Fotogalerie
-body_classes: gallery
+body_classes: body--gallery
 slug: fotogalerie
 ---
 

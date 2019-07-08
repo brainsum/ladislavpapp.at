@@ -1,6 +1,6 @@
 ---
 title: Ladislav Papp
-body_classes: about
+body_classes: body--about
 slug: ladislav-papp
 ---
 

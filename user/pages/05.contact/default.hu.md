@@ -1,6 +1,6 @@
 ---
 title: Kapcsolat
-body_classes: contact
+body_classes: body--contact
 slug: kapcsolat
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-body_classes: contact
+body_classes: body--contact
 slug: Kontakt
 ---
 
