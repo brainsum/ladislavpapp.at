@@ -1,0 +1,9 @@
+<article class="audio">
+  {# print all fields from front matter (page.header) #}
+  <h1 class="audio__title">{{ page.header.title }}</h1>
+  <p class="audio__music">{{ page.header.music }}</p>
+  {{ page.media[page.header.cover].lightbox(700, 454).cropResize(181, 136).html(page.header.title ~ ' cover', page.header.alt, 'audio__cover') }}
+
+  {# print page content (list of audio files) #}
+  {{ content }}
+</article>
