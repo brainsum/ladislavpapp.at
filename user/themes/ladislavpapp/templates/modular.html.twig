@@ -3,7 +3,9 @@
 {% block content %}
   {{ page.content }}
 
-  {% for module in page.collection() %}
-    {{ module.content }}
-  {% endfor %}
+  <div class="c-audio__list">
+    {% for module in page.collection() %}
+      {{ module.content }}
+    {% endfor %}
+  </div>
 {% endblock %}
