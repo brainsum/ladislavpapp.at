@@ -6,8 +6,8 @@ slug: kapcsolat
 
 # Kapcsolat {.c-page__title}
 
-Papp László
-Leipziger Platz 10
+Papp László<br/>
+Leipziger Platz 10<br/>
 A-2232 Deutsch Wagram
 
 Tel.: <a href="tel:0043 676 5862175">0043 676 5862175</a>

@@ -6,8 +6,8 @@ slug: contact
 
 # Contact {.c-page__title}
 
-Ladislav Papp
-Leipziger Platz 10
+Ladislav Papp<br/>
+Leipziger Platz 10<br/>
 A-2232 Deutsch Wagram
 
 Tel.: <a href="tel:0043 676 5862175">0043 676 5862175</a>
