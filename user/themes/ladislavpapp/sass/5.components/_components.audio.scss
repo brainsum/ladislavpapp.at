@@ -1,0 +1,59 @@
+/**
+ ******************************************************************************
+ *** AUDIO COMPONENT ***
+ ******************************************************************************
+ *
+ * Theming audio page.
+ */
+
+.c-audio {
+  @include make-column();
+  @include column-size(6/12);
+
+  border-bottom: 1px solid $color-brand;
+  margin-bottom: 2.5rem;
+
+  &__list {
+    @include make-grid();
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: $font-weight--bold;
+  }
+
+  p.c-audio__music {
+    color: #848484;
+    margin: 1rem 0 3rem;
+  }
+
+  &__cover {
+    margin-bottom: 2.5rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+
+    &::before {
+      content: "»";
+      margin-right: 0.5em;
+    }
+
+    a {
+      &:link,
+      &:visited {
+        color: white;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
