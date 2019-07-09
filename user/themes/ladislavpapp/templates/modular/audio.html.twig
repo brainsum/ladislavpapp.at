@@ -2,7 +2,9 @@
   {# print all fields from front matter (page.header) #}
   <h1 class="c-audio__title">{{ page.header.title }}</h1>
   <p class="c-audio__music">{{ page.header.music }}</p>
-  {{ page.media[page.header.cover].lightbox(700, 454).cropResize(181, 136).html(page.header.title ~ ' cover', page.header.alt, 'c-audio__cover') }}
+  <a data-fslightbox href="{{ page.media[page.header.cover].url }}">
+    {{ page.media[page.header.cover].cropResize(181, 136).html(page.header.title ~ ' cover', page.header.alt, 'c-audio__cover') }}
+  </a>
 
   {# print page content (list of audio files) #}
   {{ content }}

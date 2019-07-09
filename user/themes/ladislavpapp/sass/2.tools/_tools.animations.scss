@@ -1,0 +1,34 @@
+/**
+ ******************************************************************************
+ *** ANIMATIONS TOOL ***
+ ******************************************************************************
+ *
+ * Globally used transitions and keyframe animation declarations.
+ */
+
+/**
+ * Global transition
+ */
+
+@mixin global-transition {
+  transition: all 0.2s ease;
+}
+
+/**
+ * Button transition
+ */
+
+@mixin button-transition {
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+  }
+}

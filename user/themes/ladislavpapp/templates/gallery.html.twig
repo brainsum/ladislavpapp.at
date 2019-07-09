@@ -1,0 +1,29 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {% do assets.addCss('theme://vendors/fslightbox/fslightbox.min.css', 10) %}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% do assets.addJs('theme://vendors/fslightbox/fslightbox.min.js', {priority: 10, group: 'bottom'}) %}
+{% endblock %}
+
+{% block content %}
+  <article class="c-article">
+    {{ page.content }}
+
+    <p class="c-gallery__date"><time datetime="{{ page.header.gallery_date }}">{{ page.header.gallery_date }}</time></p>
+
+    <ul class="c-gallery">
+      {% for item in page.media.images %}
+        <li class="c-gallery__item">
+          <a data-fslightbox href="{{ item.url }}">
+            {{ item.cropResize(169, 114).html() }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </article>
+{% endblock %}

@@ -1,5 +1,15 @@
 {% extends 'partials/base.html.twig' %}
 
+{% block stylesheets %}
+  {{ parent() }}
+  {% do assets.addCss('theme://vendors/fslightbox/fslightbox.min.css', 10) %}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% do assets.addJs('theme://vendors/fslightbox/fslightbox.min.js', {priority: 10, group: 'bottom'}) %}
+{% endblock %}
+
 {% block content %}
   {{ page.content }}
 

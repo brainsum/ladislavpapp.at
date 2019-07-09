@@ -1,0 +1,36 @@
+/**
+ ******************************************************************************
+ *** GALLERY COMPONENT ***
+ ******************************************************************************
+ *
+ * Theming gallery page.
+ */
+
+.c-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+
+  .c-article & {
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0 1rem 1.5rem 0;
+  }
+
+  img {
+    @include button-transition;
+
+    border: 2px solid $color-brand;
+  }
+
+  &__date {
+    color: #848484;
+
+    .c-article & {
+      margin: 0 0 2em;
+    }
+  }
+}

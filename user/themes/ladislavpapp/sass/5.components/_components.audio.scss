@@ -28,6 +28,8 @@
   }
 
   &__cover {
+    @include button-transition;
+
     margin-bottom: 2.5rem;
   }
 

@@ -25,12 +25,12 @@
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
-      {% do assets.addCss('theme://css/main.css', 100) %}
+      {% do assets.addCss('theme://css/main.css', 20) %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
-      {% do assets.addJs('jquery', 100) %}
+      {% do assets.addJs('jquery', {priority: 100, group: 'bottom'}) %}
     {% endblock %}
     {{ assets.js() }}
 
