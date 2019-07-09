@@ -2,8 +2,6 @@
 title: Audio
 body_classes: body--audio
 slug: audio
-featherlight:
-  active: true
 
 content:
   items: '@self.modular'
