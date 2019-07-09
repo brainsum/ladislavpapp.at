@@ -1,0 +1,4 @@
+system.cache.enabled=false
+system.twig.cache=false
+system.twig.debug=true
+system.debugger.enabled=true
