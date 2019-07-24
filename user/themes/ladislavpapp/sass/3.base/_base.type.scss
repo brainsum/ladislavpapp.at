@@ -58,7 +58,11 @@ $base-link-outline              : none;
  */
 
 h1 {
-  font-size: $heading1-font-size;
+  font-size: $heading1-font-size * 0.75;
+
+  @include breakpoint(small) {
+    font-size: $heading1-font-size;
+  }
 }
 
 h2 {

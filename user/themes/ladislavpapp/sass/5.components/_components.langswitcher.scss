@@ -9,6 +9,35 @@
 .c-langswitcher {
   @include navigation;
 
+  position: fixed;
+  bottom: 2vh;
+  right: 4vw;
+  z-index: 1100;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-size: 2rem;
   justify-content: flex-end;
   padding: 1.4rem 0;
+
+  @include breakpoint(medium) {
+    position: static;
+    opacity: 1;
+    width: auto;
+    font-size: 1.2rem;
+  }
+
+  &__link {
+    opacity: 0.5;
+
+    @include breakpoint(medium) {
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus,
+    &.is-active {
+      opacity: 1;
+    }
+  }
 }

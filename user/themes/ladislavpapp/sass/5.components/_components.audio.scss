@@ -8,10 +8,22 @@
 
 .c-audio {
   @include make-column();
-  @include column-size(6/12);
+  @include column-size(12/12);
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid $color-brand;
   margin-bottom: 2.5rem;
+
+  @include breakpoint(small) {
+    display: block;
+  }
+
+  @include breakpoint(medium) {
+    @include column-size(6/12);
+  }
 
   &__list {
     @include make-grid();

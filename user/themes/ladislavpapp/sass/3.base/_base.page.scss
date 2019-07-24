@@ -33,6 +33,10 @@ $body-background            : $global-background;
 
 body {
   color: $global-color;
-  background: $global-background url(../images/site--background.jpg) no-repeat center;
-  padding-top: 7.6rem;
+  background: $global-background url(../images/site--background.jpg) no-repeat center 25%;
+
+  @include breakpoint(large) {
+    padding-top: 7.6rem;
+    background-position: center;
+  }
 }

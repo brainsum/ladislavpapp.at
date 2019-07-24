@@ -30,8 +30,12 @@
     &:link,
     &:active,
     &:visited {
-      color: $color-brand;
+      color: white;
       text-decoration: none;
+
+      @include breakpoint(medium) {
+        color: $color-brand;
+      }
     }
 
     &:hover,

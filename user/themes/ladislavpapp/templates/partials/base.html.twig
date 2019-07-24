@@ -49,12 +49,18 @@
         {% block header %}
           <header class="c-header">
             {% block header_navigation %}
-              <nav class="c-navigation">
-                {% include 'partials/navigation.html.twig' %}
-              </nav>
+              <div class="c-navigation">
+                <input type="checkbox" class="c-navigation__checkbox" id="c-navigation-toggle">
+                <label for="c-navigation-toggle" class="c-navigation__button">
+                  <span class="c-navigation__icon">&nbsp;</span>
+                </label>
+                <div class="c-navigation__background">&nbsp;</div>
+                <nav class="c-navigation__nav">
+                  {% include 'partials/navigation.html.twig' %}
+                </nav>
+                {% include 'partials/langswitcher.html.twig' %}
+              </div>
             {% endblock %}
-
-            {% include 'partials/langswitcher.html.twig' %}
           </header>
         {% endblock %}
 

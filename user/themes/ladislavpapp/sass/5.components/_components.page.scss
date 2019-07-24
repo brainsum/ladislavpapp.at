@@ -7,10 +7,15 @@
  */
 
 .c-page {
-  @include make-column(7rem);
-  @include column-size(8/12);
+  @include make-column();
+  @include column-size(12/12);
 
   position: relative;
+
+  @include breakpoint(large) {
+    @include make-column(7rem);
+    @include column-size(8/12);
+  }
 
   &::after {
     display: block;
