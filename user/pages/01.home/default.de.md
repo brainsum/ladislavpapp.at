@@ -5,7 +5,9 @@ body_classes: is-front body--home
 
 # Home {.c-page__title}
 
-Das Ehepaar Justina und Ladislav Papp lernte sich während des Studiums an der Musikhochschule in Zürich kennen und bereits seit dem Jahr 2000 bilden sie das Flöte-Harfe Duo.
+Das Ehepaar Justina und Ladislav Papp lernte sich während des Studiums an der
+Musikhochschule in Zürich kennen und bereits seit dem Jahr 2000 bilden sie das
+Flöte-Harfe Duo.
 
 Zurzeit leben sie in Deutsch Wagram, in der Nähe von Wien.
 

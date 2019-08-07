@@ -151,7 +151,7 @@ function twigTask() {
 }
 
 /**
- * Twig Task
+ * Markdown Task
  *
  * @return {object} Watched markdown (content) files.
 */

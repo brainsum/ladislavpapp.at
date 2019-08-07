@@ -1,134 +1,233 @@
-# ![](https://avatars1.githubusercontent.com/u/8237355?v=2&s=50) Grav
+# LadislavPapp website
 
-[![PHPStan](https://img.shields.io/badge/PHPStan-enabled-brightgreen.svg?style=flat)](https://github.com/phpstan/phpstan)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/cfd20465-d0f8-4a0a-8444-467f5b5f16ad/mini.png)](https://insight.sensiolabs.com/projects/cfd20465-d0f8-4a0a-8444-467f5b5f16ad)
-[![Discord](https://img.shields.io/discord/501836936584101899.svg?logo=discord&colorB=728ADA&label=Discord%20Chat)](https://chat.getgrav.org)
- [![Build Status](https://travis-ci.org/getgrav/grav.svg?branch=develop)](https://travis-ci.org/getgrav/grav) [![OpenCollective](https://opencollective.com/grav/backers/badge.svg)](#backers) [![OpenCollective](https://opencollective.com/grav/sponsors/badge.svg)](#sponsors)
+It's a [Grav CMS](https://getgrav.org) based multilingual personal website of
+musician Ladislav Papp. Here you can find all the necessary information to
+working with this website.
 
-Grav is a **Fast**, **Simple**, and **Flexible**, file-based Web-platform.  There is **Zero** installation required.  Just extract the ZIP archive, and you are already up and running.  It follows similar principles to other flat-file CMS platforms, but has a different design philosophy than most. Grav comes with a powerful **Package Management System** to allow for simple installation and upgrading of plugins and themes, as well as simple updating of Grav itself.
+## Why Grav CMS?
 
-The underlying architecture of Grav is designed to use well-established and _best-in-class_ technologies to ensure that Grav is simple to use and easy to extend. Some of these key technologies include:
+Although originally we want a static HTML5 website with some PHP functions for
+modular structure and language switcher later stick with the open-source Grav
+CMS. GRAV is a flat-file CMS with an optional admin UI. Flat-file means no
+database, all information stored in markdown files and YAML configuration files,
+so everything in Git, everything version-controlled! Although we can install an
+admin interface additionally, it isn't necessary we can work only in files.
+Because we mostly work with Drupal,
 
-* [Twig Templating](https://twig.sensiolabs.org/): for powerful control of the user interface
-* [Markdown](https://en.wikipedia.org/wiki/Markdown): for easy content creation
-* [YAML](https://yaml.org): for simple configuration
-* [Parsedown](https://parsedown.org/): for fast Markdown and Markdown Extra support
-* [Doctrine Cache](https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html): layer for performance
-* [Pimple Dependency Injection Container](https://pimple.sensiolabs.org/): for extensibility and maintainability
-* [Symfony Event Dispatcher](https://symfony.com/doc/current/components/event_dispatcher/introduction.html): for plugin event handling
-* [Symfony Console](https://symfony.com/doc/current/components/console/introduction.html): for CLI interface
-* [Gregwar Image Library](https://github.com/Gregwar/Image): for dynamic image manipulation
+## Grav was an easy choice:
 
-# Requirements
+- free and open-source (and updated very often)
+- written in PHP (we can use the latest PHP7)
+- use `composer` as backend package management
+- has a built-in [CLI named `bin/grav`](https://learn.getgrav.org/16/cli-console) (like Drush)
+- use `Twig` for templating
+- all configuration and local variables stored in `YAML` files
+- we can use `.env` files for environment overwrites
+- use base theming/plugin developing system (overwrites, entends)
+- we can use a pipeline system for loading css/js similar in Drupal
+- content types
+- image styles
 
-- PHP 7.1.3 or higher. Check the [required modules list](https://learn.getgrav.org/basics/requirements#php-requirements)
-- Check the [Apache](https://learn.getgrav.org/basics/requirements#apache-requirements) or [IIS](https://learn.getgrav.org/basics/requirements#iis-requirements) requirements
+## Advantages over Drupal
 
-# QuickStart
+- no database (content and config) hassles
+- everything in Git/version control
+- frontend freedom
+- doesn't need hacks core/plugins
+- lighter footprint
+- built-in features, like media browser or media player
 
-These are the options to get Grav:
+## Content editing
 
-### Downloading a Grav Package
+_You can find all up-to-date indormation in official
+[Grav documentation](https://learn.getgrav.org/16/content), but here is the
+summary:_
 
-You can download a **ready-built** package from the [Downloads page on https://getgrav.org](https://getgrav.org/downloads)
+### Where are the contents?
 
-### With Composer
+Everything that we working in stored in the `/user` directory. We don't need and
+doesn't allow to modify anything outside this directory or **those
+modifications will be lost on next update!**
 
-You can create a new project with the latest **stable** Grav release with the following command:
+All content lives in `/user/pages/` directory organized by subdirectories. A
+directory represents a single page of the site. All directory name starts with a
+number: this number will define the order in the navigation menu. These
+directories contain the content of a single page such as:
 
+- a markdown file for all text-based data*
+- any attached media file (ex: gallery images, documents, audio or video files)
+- subdirectories (started with an underscore (`_`)) for page sections
+
+*Because this is a multilingual website here are multiple markdown files for
+each language.
+
+>! CAUTION: The markdown file name is the corresponding page template in our theme
+
+### How can I edit a page?
+
+A markdown file has two parts:
+
+- YAML frontend matter for all meta information and page variables
+- simple page content in [markdown syntax](https://learn.getgrav.org/16/content/markdown).
+
+#### The YAML frontend matter
+
+The `frontend matter` or `headers` contains all meta-information about the current
+page in YAML format. It begins and ends with three dashes (`---`) in a new line.
+There are some obligatory data, like `title`, but we can add many more, like
+`slug`, menu item title, body class or `date`. You can find all in
+[Grav documentation](https://learn.getgrav.org/16/content/headers).
+
+Furthermore, we can define our custom variables too. For example, if the page
+content needs a specific DOM structure, we store all information here then print
+them out in our theme's twig page template.
+
+#### Markdown content
+
+The markdown part contains all static content. We can write any text, lists,
+tables or embed images what [markdown syntax](http://daringfireball.net/projects/markdown/)
+allowed to us. Grav supports the [Markdown Extra](https://michelf.ca/projects/php-markdown/extra/) too!
+
+>! The markdown part is obligatory if it's empty the page will be blank!
+
+**Some more special solutions:**
+
+- if we want to add a CSS class or other HTML attribute to an element, use curly
+brackets: `# Home {.c-page__title}`
+- if an `<ul>` list begins with the year (number followed by a dot), it will be
+converted to `<ol>`, to avoid that we have to escape that dot: `- 1998\. some text`
+- you can use any HTML syntax too for special markups, like phone links:
+`<a href="tel:0043 676 5862175">0043 676 5862175</a>`
+- for manual line breaks we can use `<br>`, `\`, _double space_ or `&nbsp;`
+- to highlighting text (and themed in CSS) use `<mark>`
+- for URLs put the visible text in square brackets and the link in normal brackets,
+like: `E-mail: [ladislav@duopapp.at](mailto:ladislav@duopapp.at)`
+- images are URLs too, but begin with an exclamation: `![Minion](http://octodex.github.com/images/minion.png)`
+
+### Item listing
+
+There are three types of pages in Grav:
+
+- simple single pages
+- lister pages
+- modular pages
+
+The last two ones working similarly, but in this site, we use only modular
+pages. In these pages, we define more sections what are listed or embed in a single
+page. We need for that some special attribute in the parent's page frontend matter
+and some subdirectories begin with an underscore. Then we need to create new Twig
+templates for printing them in our theme. The audio page works in this way. So,
+we can edit and list each audio albums one-by-one.
+
+## Sitebuilding
+
+### Admin panel
+
+We don't use [admin UI](https://learn.getgrav.org/16/admin-panel) here, but if
+in the future needs for users, we can install it by `bin/gpm install admin`.
+
+### Users
+
+Currently doesn't need any user, but if in the future needs those will be stored
+in `/user/accounts`.
+
+### Configurations
+
+All configuration is stored min a YAML file in `/user/config/` directory:
+
+- `system.yaml`: this contains all global configuration inherited from
+`/system/config/system.yaml` (doesn't contains all config by default)
+- `site.yaml`: this store the global site metadata inherited from
+`/system/config/site.yaml` (doesn't contain all config by default)
+
+If we need to overwrite a contrib plugin's configuration, copy it to
+`/user/config/plugins/` directory and change it according to your needs.
+
+### Plugins and themes
+
+There are many contrib plugins, themes and sceletons (these contains a sample
+content as well) for Grav (OK, not compareable to Drupal). More plugins from the
+Grav team (you don't need to install them as the core, only if you need them). You
+can browse them [here](https://getgrav.org/downloads/plugins#extras) (or in CLI:
+`bin/gpm index`) then install them by `bin/gpm install pluginname`. Thems are
+similar, but here we use a custom theme named `ladislavpapp`.
+
+### Site navigation
+
+The navigation menu is very simple: it collects all pages from `/user/pages/`
+order by ABC. Here we don't need more.
+
+## Theme developing
+
+In Grav, we need to use themes just like in Drupal. The default theme is the
+Quark left here for reference. Altough our custom theme documented here are
+some general knowledge.
+
+### Structure
+
+We have freehand how structure our theme, but there are some requirements:
+
+- `themename.yaml` created and used by theme generator plugin
+- `blueprints.yaml` contains theme configurations
+- `themename.php` for custom theme functions
+- `templates` directory for our twig files
+
+Beside of these we have freehand to structuring our theme.
+
+### Templates
+
+We store all page type templates in the templates root like
+`default.html.twig` or `gallery.html.twig`. The defult one is designed for the
+simple single pages.
+
+The common `components/sections` like templates are in `partials` subdirectory
+while the `modules/sections` for modular pages are in `module` subdirectory.
+
+### Variables
+
+- `{{ config.site.title }}`: a global config variable from `/user/config/site.yaml`
+- `{{ page.header.body_classes }}`: a page variable (from a markdown files's
+frontend matter)
+- `{{ page.content }}`: the full markdown content of the current page
+
+### Shortcuts
+
+- `theme://`: alias for current theme's root
+
+### Including CSS and JavaScript assets
+
+First all files need to be added to asset pipeline:
+
+``` twig
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/main.css', 20) %}
+{% endblock %}
 ```
-$ composer create-project getgrav/grav ~/webroot/grav
+
+then print that out:
+
+``` twig
+{{ assets.css() }}
 ```
 
-### From GitHub
+We can add css/js files only for a specific pages if we add them in page template:
 
-1. Clone the Grav repository from [https://github.com/getgrav/grav]() to a folder in the webroot of your server, e.g. `~/webroot/grav`. Launch a **terminal** or **console** and navigate to the webroot folder:
-   ```
-   $ cd ~/webroot
-   $ git clone https://github.com/getgrav/grav.git
-   ```
+``` twig
+{% extends 'partials/base.html.twig' %}
 
-2. Install the **plugin** and **theme dependencies** by using the [Grav CLI application](https://learn.getgrav.org/advanced/grav-cli) `bin/grav`:
-   ```
-   $ cd ~/webroot/grav
-   $ bin/grav install
-   ```
+{% block stylesheets %}
+  {{ parent() }}
+  {% do assets.addCss('theme://vendors/fslightbox/fslightbox.min.css', 10) %}
+{% endblock %}
 
-Check out the [install procedures](https://learn.getgrav.org/basics/installation) for more information.
-
-# Adding Functionality
-
-You can download [plugins](https://getgrav.org/downloads/plugins) or [themes](https://getgrav.org/downloads/themes) manually from the appropriate tab on the [Downloads page on https://getgrav.org](https://getgrav.org/downloads), but the preferred solution is to use the [Grav Package Manager](https://learn.getgrav.org/advanced/grav-gpm) or `GPM`:
-
-```
-$ bin/gpm index
+{% block javascripts %}
+  {{ parent() }}
+  {% do assets.addJs('theme://vendors/fslightbox/fslightbox.min.js', {priority: 10, group: 'bottom'}) %}
+{% endblock %}
 ```
 
-This will display all the available plugins and then you can install one or more with:
+We can group (ex. load to header or footer) and priorize them too:
 
+``` twig
+{% do assets.addJs('theme://vendors/fslightbox/fslightbox.min.js', {priority: 10, group: 'bottom'}) %}
 ```
-$ bin/gpm install <plugin/theme>
-```
-
-# Updating
-
-To update Grav you should use the [Grav Package Manager](https://learn.getgrav.org/advanced/grav-gpm) or `GPM`:
-
-```
-$ bin/gpm selfupgrade
-```
-
-To update plugins and themes:
-
-```
-$ bin/gpm update
-```
-
-
-# Contributing
-We appreciate any contribution to Grav, whether it is related to bugs, grammar, or simply a suggestion or improvement! Please refer to the [Contributing guide](CONTRIBUTING.md) for more guidance on this topic.
-
-## Security issues
-If you discover a possible security issue related to Grav or one of its plugins, please email the core team at contact@getgrav.org and we'll address it as soon as possible.
-
-# Getting Started
-
-* [What is Grav?](https://learn.getgrav.org/basics/what-is-grav)
-* [Install](https://learn.getgrav.org/basics/installation) Grav in few seconds
-* Understand the [Configuration](https://learn.getgrav.org/basics/grav-configuration)
-* Take a peek at our available free [Skeletons](https://getgrav.org/downloads/skeletons)
-* If you have questions, jump on our [Discord Chat Server](https://chat.getgrav.org)!
-* Have fun!
-
-# Exploring More
-
-* Have a look at our [Basic Tutorial](https://learn.getgrav.org/basics/basic-tutorial)
-* Dive into more [advanced](https://learn.getgrav.org/advanced) functions
-* Learn about the [Grav CLI](https://learn.getgrav.org/cli-console/grav-cli)
-* Review examples in the [Grav Cookbook](https://learn.getgrav.org/cookbook)
-* More [Awesome Grav Stuff](https://github.com/getgrav/awesome-grav)
-
-# Backers
-Support Grav with a monthly donation to help us continue development. [[Become a backer](https://opencollective.com/grav#backer)]
-
-<img src="https://opencollective.com/grav/tiers/backers.svg?avatarHeight=36&width=600" />
-
-# Sponsors
-Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/grav#sponsor)]
-
-<img src="https://opencollective.com/grav/tiers/sponsors.svg?avatarHeight=36&width=600" />
-
-# License
-
-See [LICENSE](LICENSE.txt)
-
-
-[gitflow-model]: http://nvie.com/posts/a-successful-git-branching-model/
-[gitflow-extensions]: https://github.com/nvie/gitflow
-
-# Running Tests
-
-First install the dev dependencies by running `composer update` from the Grav root.
-Then `composer test` will run the Unit Tests, which should be always executed successfully on any site.
-Windows users should use the `composer test-windows` command.
-You can also run a single unit test file, e.g. `composer test tests/unit/Grav/Common/AssetsTest.php`
