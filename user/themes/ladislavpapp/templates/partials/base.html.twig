@@ -26,6 +26,7 @@
 
     {% block stylesheets %}
       {% do assets.addCss('theme://css/main.css', 20) %}
+      {% do assets.addCss('theme://css/main-above-45.css', {priority: 10, media: '(min-width: 45em)'}) %}
     {% endblock %}
     {{ assets.css() }}
 

@@ -1,14 +1,16 @@
-const browserSync   = require('browser-sync').create();
-const gulp          = require('gulp');
-const autoprefixer  = require('autoprefixer');
-const purge         = require('gulp-css-purge');
-const eslint        = require('gulp-eslint');
-const npmDist       = require('gulp-npm-dist');
-const postcss       = require('gulp-postcss');
-const sass          = require('gulp-sass');
-const sourcemaps    = require('gulp-sourcemaps');
-const stylelint     = require('gulp-stylelint');
-const uglify        = require('gulp-uglify');
+const browserSync       = require('browser-sync').create();
+const clean             = require('gulp-clean');
+const gulp              = require('gulp');
+const autoprefixer      = require('autoprefixer');
+const purge             = require('gulp-css-purge');
+const eslint            = require('gulp-eslint');
+const npmDist           = require('gulp-npm-dist');
+const postcss           = require('gulp-postcss');
+const sass              = require('gulp-sass');
+const sourcemaps        = require('gulp-sourcemaps');
+const splitMediaQueries = require('gulp-split-media-queries');
+const stylelint         = require('gulp-stylelint');
+const uglify            = require('gulp-uglify');
 
 // Store all paths
 const paths = {
@@ -32,6 +34,19 @@ function copyVendorTask() {
   return gulp
     .src(npmDist(), { base: './node_modules' })
     .pipe(gulp.dest('./vendors/'));
+}
+
+/**
+ * CSS: Cleaning Task
+ *
+ * Remove all compiled CSS file to make a clean start before Sass tasks and
+ * avoid duplicated and conflicted CSS rules.
+ * @return {object} empty directory
+ */
+function cssCleanTask() {
+  return gulp
+    .src(paths.css, { read: false })
+    .pipe(clean());
 }
 
 /**
@@ -77,6 +92,9 @@ function sassProdTask() {
     .pipe(sass({ outputStyle: 'compact', precision: 10 }))
     .on('error', sass.logError)
     .pipe(postcss([autoprefixer()]))
+    .pipe(splitMediaQueries({
+      breakpoint: 45, // 720px and above
+    }))
     .pipe(
       purge({
         trim: true,
@@ -187,12 +205,12 @@ const compileTask     = gulp.parallel(sassDevTask, scriptsTask);
 const compileProdTask = gulp.parallel(sassProdTask, scriptsTask);
 
 // export tasks
-exports.default = gulp.series(compileTask, browserSyncTask);
-exports.prod = gulp.series(compileProdTask);
+exports.default = gulp.series(cssCleanTask, compileTask, browserSyncTask);
+exports.prod = gulp.series(cssCleanTask, compileProdTask);
 exports.lint = gulp.parallel(sassLintTask, scriptsLintTask);
 exports.vendors = copyVendorTask;
-exports.sassDev = sassDevTask;
-exports.sassProd = sassProdTask;
+exports.sassDev = gulp.series(cssCleanTask, sassDevTask);
+exports.sassProd = gulp.series(cssCleanTask, sassProdTask);
 exports.sassLint = sassLintTask;
 exports.scripts = scriptsTask;
 exports.scriptsLint = scriptsLintTask;
