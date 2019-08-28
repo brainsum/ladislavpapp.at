@@ -52,6 +52,7 @@
     "stylelint-scss": "^3.8.0"
   },
   "dependencies": {
-    "fslightbox": "^2.0.1"
+    "fslightbox": "^2.0.1",
+    "jquery": "^3.4.1"
   }
 }

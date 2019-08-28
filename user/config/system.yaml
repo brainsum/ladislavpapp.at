@@ -40,6 +40,8 @@ assets:
   css_rewrite: true
   js_pipeline: false
   js_minify: true
+  collections:
+    jquery: theme://vendors/jquery/dist/jquery.min.js
 
 errors:
   display: true
