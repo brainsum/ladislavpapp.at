@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "PT Serif";
+  src:
+    url("/user/themes/ladislavpapp/fonts/pt-serif--regular-hint-all.woff2") format("woff2"),
+    url("/user/themes/ladislavpapp/fonts/pt-serif--regular-hint-all.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src:
+    url("/user/themes/ladislavpapp/fonts/pt-serif--italic-hint-all.woff2") format("woff2"),
+    url("/user/themes/ladislavpapp/fonts/pt-serif--italic-hint-all.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src:
+    url("/user/themes/ladislavpapp/fonts/pt-serif--bold-hint-all.woff2") format("woff2"),
+    url("/user/themes/ladislavpapp/fonts/pt-serif--bold-hint-all.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

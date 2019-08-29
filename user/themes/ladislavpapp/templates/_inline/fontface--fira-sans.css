@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Fira Sans";
+  src:
+    url("/user/themes/ladislavpapp/fonts/fira-sans--regular-hint-all.woff2") format("woff2"),
+    url("/user/themes/ladislavpapp/fonts/fira-sans--regular-hint-all.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

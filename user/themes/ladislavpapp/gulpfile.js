@@ -226,7 +226,7 @@ const compileProdTask = gulp.parallel(sassProdTask, scriptsTask);
 
 // export tasks
 exports.default = gulp.series(cssCleanTask, compileTask, browserSyncTask);
-exports.prod = gulp.series(cssCleanTask, compileProdTask, criticalTask);
+exports.prod = gulp.series(cssCleanTask, compileProdTask);
 exports.critical = criticalTask;
 exports.lint = gulp.parallel(sassLintTask, scriptsLintTask);
 exports.vendors = copyVendorTask;

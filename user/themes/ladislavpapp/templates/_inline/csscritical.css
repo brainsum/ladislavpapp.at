@@ -54,30 +54,6 @@ input {
   font: inherit;
 }
 
-@font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/pt-serif--regular.woff2") format("woff2"),url("../fonts/pt-serif--regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/pt-serif--italic.woff2") format("woff2"),url("../fonts/pt-serif--italic.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/pt-serif--bold.woff2") format("woff2"),url("../fonts/pt-serif--bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   height: 100%;
   color: #fff;

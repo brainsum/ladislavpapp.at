@@ -24,15 +24,29 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
+    {% block head_font_css %}
+      {# Webfont loading: First Stage #}
+      <link rel="preload" href="{{ url('theme://fonts/fira-sans--regular-kern-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="{{ url('theme://fonts/pt-serif--regular-kern-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+
+      <style>{{ source('_inline/fontface--fira-sans.css') }}</style>
+      <style>{{ source('_inline/fontface--pt-serif.css') }}</style>
+    {% endblock %}
+
     {% block stylesheets %}
       <style>{{ source('_inline/csscritical.css', ignore_missing = true) }}</style>
-      {% do assets.addCss('theme://css/main.css', 20) %}
+      <link rel="preload" href="{{ url('theme://css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+      <noscript><link rel="stylesheet" href="{{ url('theme://css/main.css') }}" /></noscript>
       {% do assets.addCss('theme://css/main-above-45.css', {priority: 10, media: '(min-width: 45em)'}) %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
       {% do assets.addJs('jquery', {priority: 100, group: 'bottom'}) %}
+
+      <script>
+        {{ source('_inline/cssrelpreload.min.js') }}
+      </script>
     {% endblock %}
     {{ assets.js() }}
 
