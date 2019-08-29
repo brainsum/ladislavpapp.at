@@ -25,6 +25,7 @@
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
+      <style>{{ source('_inline/csscritical.css', ignore_missing = true) }}</style>
       {% do assets.addCss('theme://css/main.css', 20) %}
       {% do assets.addCss('theme://css/main-above-45.css', {priority: 10, media: '(min-width: 45em)'}) %}
     {% endblock %}

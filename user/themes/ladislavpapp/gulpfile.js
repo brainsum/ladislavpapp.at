@@ -11,6 +11,7 @@ const sourcemaps        = require('gulp-sourcemaps');
 const splitMediaQueries = require('gulp-split-media-queries');
 const stylelint         = require('gulp-stylelint');
 const uglify            = require('gulp-uglify');
+const critical          = require('gulp-penthouse');
 
 // Store all paths
 const paths = {
@@ -126,6 +127,25 @@ function sassLintTask() {
 }
 
 /**
+ * Generate critical CSS for inline
+ *
+ * @return {object} ciritcal.css for inlining.
+ */
+function criticalTask() {
+  return gulp
+    .src('./css/main.css')
+    .pipe(critical({
+      out: 'critical.css',
+      url: 'http://ladislavpapp.test',
+      width: 1024,
+      height: 768,
+      strict: true,
+      userAgent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+    }))
+    .pipe(gulp.dest(paths.css));
+}
+
+/**
  * JavaScript Task
  *
  * Currently there is only one JavaScript task (no separated for dev and prod).
@@ -206,7 +226,8 @@ const compileProdTask = gulp.parallel(sassProdTask, scriptsTask);
 
 // export tasks
 exports.default = gulp.series(cssCleanTask, compileTask, browserSyncTask);
-exports.prod = gulp.series(cssCleanTask, compileProdTask);
+exports.prod = gulp.series(cssCleanTask, compileProdTask, criticalTask);
+exports.critical = criticalTask;
 exports.lint = gulp.parallel(sassLintTask, scriptsLintTask);
 exports.vendors = copyVendorTask;
 exports.sassDev = gulp.series(cssCleanTask, sassDevTask);
