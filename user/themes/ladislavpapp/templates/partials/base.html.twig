@@ -39,7 +39,6 @@
       <noscript><link rel="stylesheet" href="{{ url('theme://css/main.css') }}" /></noscript>
       {% do assets.addCss('theme://css/main-above-45.css', {priority: 10, media: '(min-width: 45em)'}) %}
     {% endblock %}
-    {{ assets.css() }}
 
     {% block javascripts %}
       {% do assets.addJs('jquery', {priority: 100, group: 'bottom'}) %}
@@ -48,7 +47,11 @@
         {{ source('_inline/cssrelpreload.min.js') }}
       </script>
     {% endblock %}
-    {{ assets.js() }}
+
+    {% block assets deferred %}
+      {{ assets.css()|raw }}
+      {{ assets.js()|raw }}
+    {% endblock %}
 
   {% endblock head %}
 </head>
