@@ -129,6 +129,8 @@ function sassLintTask() {
 /**
  * Generate critical CSS for inline
  *
+ * WANING! It can't place the given destination directory and name, so we need
+ * to move the generated csscritical.css to `templates/_inline` dir manually!
  * @return {object} ciritcal.css for inlining.
  */
 function criticalTask() {
@@ -142,7 +144,7 @@ function criticalTask() {
       strict: true,
       userAgent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
     }))
-    .pipe(gulp.dest(paths.css));
+    .pipe(gulp.dest('./'));
 }
 
 /**

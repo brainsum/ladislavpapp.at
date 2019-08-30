@@ -42,6 +42,7 @@
 
     {% block javascripts %}
       {% do assets.addJs('jquery', {priority: 100, group: 'bottom'}) %}
+      {% do assets.addJs('theme://vendors/modernizr/modernizr.js', {priority: 90, group: 'bottom'}) %}
 
       <script>
         {{ source('_inline/cssrelpreload.min.js') }}

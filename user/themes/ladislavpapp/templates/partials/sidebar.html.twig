@@ -1,5 +1,9 @@
 <a class="c-logo" href="{{ base_url == '' ? '/' : base_url }}">
-  <img class="c-logo__image" src="{{ url('theme://images/logo@2x.png') }}" alt="{{ config.site.title }}">
+  <picture>
+    <source srcset="{{ url('theme://images/logo@2x.webp') }}" type="image/webp">
+    <source srcset="{{ url('theme://images/logo@2x.png') }}" type="image/jpeg">
+    <img class="c-logo__image" src="{{ url('theme://images/logo@2x.png') }}" alt="{{ config.site.title }}">
+  </picture>
 </a>
 <div class="c-slogan">
   <span class="letter--big">H</span>arp by <span class="letter--big">L</span>adislav <span class="letter--big">P</span>app

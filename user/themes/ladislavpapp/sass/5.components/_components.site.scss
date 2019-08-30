@@ -15,12 +15,19 @@
     position: relative;
     content: "";
     display: block;
-    background: url(../images/ladislav-papp--mobile.jpg) center no-repeat;
     background-size: cover;
     height: 50rem;
     border: 2px solid $color-brand;
     margin: 3rem auto;
     width: 100%;
+
+    .webp & {
+      background: url(../images/ladislav-papp--mobile.webp) center no-repeat;
+    }
+
+    .no-webp & {
+      background: url(../images/ladislav-papp--mobile.jpg) center no-repeat;
+    }
 
     @include breakpoint(small) {
       max-width: 320px;

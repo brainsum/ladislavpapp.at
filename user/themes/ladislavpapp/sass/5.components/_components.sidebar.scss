@@ -20,10 +20,17 @@
   @include breakpoint(large) {
     @include column-size(4/12);
 
-    background: #c4c4c4 url(../images/ladislav-papp.jpg) center bottom no-repeat;
     background-size: 100%;
     min-height: 82.5rem;
     border: 2px solid $color-brand;
     margin-bottom: 0;
+
+    .webp & {
+      background: #c4c4c4 url(../images/ladislav-papp.webp) center bottom no-repeat;
+    }
+
+    .no-webp & {
+      background: #c4c4c4 url(../images/ladislav-papp.jpg) center bottom no-repeat;
+    }
   }
 }
