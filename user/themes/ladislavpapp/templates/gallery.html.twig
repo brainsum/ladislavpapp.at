@@ -19,7 +19,7 @@
     <ul class="c-gallery">
       {% for item in page.media.images %}
         <li class="c-gallery__item">
-          <a data-fslightbox href="{{ item.url }}">
+          <a data-fslightbox aria-label="{{ "THEME_LADISLAVPAPP.OPEN_IMAGE"|t }}" href="{{ item.url }}">
             {{ item.cropResize(169, 114).html() }}
           </a>
         </li>
