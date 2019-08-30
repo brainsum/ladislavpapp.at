@@ -15,7 +15,6 @@
     position: relative;
     content: "";
     display: block;
-    background-size: cover;
     height: 50rem;
     border: 2px solid $color-brand;
     margin: 3rem auto;
@@ -23,10 +22,12 @@
 
     .webp & {
       background: url(../images/ladislav-papp--mobile.webp) center no-repeat;
+      background-size: cover;
     }
 
     .no-webp & {
       background: url(../images/ladislav-papp--mobile.jpg) center no-repeat;
+      background-size: cover;
     }
 
     @include breakpoint(small) {

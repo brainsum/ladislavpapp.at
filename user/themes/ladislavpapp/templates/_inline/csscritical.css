@@ -57,7 +57,6 @@ input {
 body {
   height: 100%;
   color: #fff;
-  background: #000 url(../images/site--background.jpg) no-repeat center 25%;
   font: 400 1.4rem "PT Serif",Georgia,serif;
 }
 
@@ -153,7 +152,6 @@ body {
   position: relative;
   content: "";
   display: block;
-  background-size: cover;
   height: 50rem;
   border: 2px solid #4e4233;
   margin: 3rem auto;

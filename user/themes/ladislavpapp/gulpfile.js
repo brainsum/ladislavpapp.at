@@ -144,7 +144,7 @@ function criticalTask() {
       strict: true,
       userAgent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest(paths.css));
 }
 
 /**
