@@ -50,4 +50,4 @@ Interpreten l. Preis
 Kritikerpreis
 - <mark>2002\.</mark> Kiwanis Musikpreis für Harfe, Zürich (CH) – 1. Preis
 
-**[Download curriculum vitae](Ladislav-Papp-cv-de.pdf) {.download}**
+**[Download curriculum vitae](Ladislav-Papp-cv-de.pdf?target=_blank) {.download}**

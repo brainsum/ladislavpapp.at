@@ -36,4 +36,4 @@ interpretov „titul laureáta“
 - <mark>2001\.</mark> Stredoeurópsky hudobný festival, Žilina (SK) – Cena kritikov
 - <mark>2002\.</mark> Kiwanis Musikpreise für Harfe, Zürich (CH) – 1. cena
 
-**[Stiahnuť životopis](Ladislav-Papp-cv-sk.pdf) {.download}**
+**[Stiahnuť životopis](Ladislav-Papp-cv-sk.pdf?target=_blank) {.download}**

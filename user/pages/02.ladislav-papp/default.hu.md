@@ -39,4 +39,4 @@ Seregszemléje - 1. helyezett
 - <mark>2001\.</mark> Közép-európai Koncertművészeti Fesztivál, Zsolna (SK) – Kritikusok Díja
 - <mark>2002\.</mark> Kiwanis Musikpreise für Harfe, Zürich (CH) – 1. díj
 
-**[Önéletrajz letöltése](Ladislav-Papp-cv-hu.pdf) {.download}**
+**[Önéletrajz letöltése](Ladislav-Papp-cv-hu.pdf?target=_blank) {.download}**

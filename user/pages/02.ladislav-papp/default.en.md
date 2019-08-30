@@ -44,4 +44,4 @@ Ladislav Papp brought his first CD out in 1999, titled “_Harp is my No.1_”.
 - <mark>2001\.</mark> Central European Festival of Concert Art, Žilina (SK) – Critics' Prize
 - <mark>2002\.</mark> Kiwani’s Music Award for Harp, Zurich (CH) – 1st prize
 
-**[Download curriculum vitae](Ladislav-Papp-cv-en.pdf) {.download}**
+**[Download curriculum vitae](Ladislav-Papp-cv-en.pdf?target=_blank) {.download}**
