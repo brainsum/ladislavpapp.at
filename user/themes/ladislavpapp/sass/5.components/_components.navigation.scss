@@ -161,7 +161,8 @@
       border-bottom: 2px solid white;
 
       @include breakpoint(medium) {
-        border: 0;
+        border-top: 0;
+        border-bottom: 0;
       }
     }
   }
@@ -183,7 +184,9 @@
     &:hover,
     &:focus,
     &.is-active {
-      color: white;
+      @include breakpoint(medium) {
+        color: white;
+      }
     }
   }
 

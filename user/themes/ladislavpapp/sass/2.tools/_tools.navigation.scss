@@ -41,7 +41,9 @@
     &:hover,
     &:focus,
     &.is-active {
-      color: white;
+      @include breakpoint(medium) {
+        color: white;
+      }
     }
   }
 }
