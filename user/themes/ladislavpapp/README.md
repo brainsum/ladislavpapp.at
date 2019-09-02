@@ -29,6 +29,11 @@ tabs.
 - `npm run prod` or `gulp prod`: run it before commit: it will create the
 minified version of CSS and JS.
 
+The prod task will create a separeted css for lager screens. After prod task, please run `gulp critical` task too to generate
+critical CSS for above the fold. Unfortunately the used critical plugin can't
+move the generated `csscritical.css` to given place, so please move it by manual
+it from theme's root to `templates/_inline` direcory!
+
 _There are more gulp tasks, check them out in `package.json` and `gulpfile.js`._
 
 ## Structure
