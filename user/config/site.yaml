@@ -3,4 +3,5 @@ default_lang: de
 author:
   name: Ladislav Papp
   email: 'ladislav@duopapp.at'
-
+metadata:
+  description: ''
