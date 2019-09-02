@@ -157,6 +157,14 @@ similar, but here we use a custom theme named `ladislavpapp`.
 The navigation menu is very simple: it collects all pages from `/user/pages/`
 order by ABC. Here we don't need more.
 
+### Some useful CLI command
+
+- clear cache: `bin/grav cache`
+- upgrade Grav core: bin/gpm self-upgrade`
+- update installed plugins: `bin/gpm update`
+
+All available CLI commands are found in [documentation](https://learn.getgrav.org/16/cli-console).
+
 ## Theme developing
 
 In Grav, we need to use themes just like in Drupal. The default theme is the
