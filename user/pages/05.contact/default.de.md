@@ -11,6 +11,6 @@ Ladislav Papp<br/>
 Leipziger Platz 10<br/>
 A-2232 Deutsch Wagram
 
-Tel.: <a href="tel:0043 676 5862175">0043 676 5862175</a>
+Tel.: <a href="tel:00436765861780">+43 676 58 61 780</a>
 
 E-mail: [ladislav@duopapp.at](mailto:ladislav@duopapp.at)
