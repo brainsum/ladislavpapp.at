@@ -5,4 +5,4 @@ slug: fotogaleria
 gallery_date: '2010-08-19'
 ---
 
-# Fotogaléria {.c-page__title}
+**[Fotók letöltése eredeti minőségben](photos.zip) {.download}**

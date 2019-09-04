@@ -12,7 +12,7 @@
 
 {% block content %}
   <article class="c-article">
-    {{ page.content }}
+    <h1 class="c-page__title">{{ page.header.title }}</h1>
 
     <p class="c-gallery__date"><time datetime="{{ page.header.gallery_date }}">{{ page.header.gallery_date }}</time></p>
 
@@ -25,5 +25,7 @@
         </li>
       {% endfor %}
     </ul>
+
+    {{ page.content }}
   </article>
 {% endblock %}

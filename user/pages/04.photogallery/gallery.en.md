@@ -5,4 +5,4 @@ slug: photogallery
 gallery_date: '2010-08-19'
 ---
 
-# Photogallery {.c-page__title}
+**[Download photos in the original quality](photos.zip) {.download}**
