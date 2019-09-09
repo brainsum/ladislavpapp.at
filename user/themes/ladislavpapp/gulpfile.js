@@ -2,7 +2,7 @@ const browserSync       = require('browser-sync').create();
 const clean             = require('gulp-clean');
 const gulp              = require('gulp');
 const autoprefixer      = require('autoprefixer');
-const purge             = require('gulp-css-purge');
+const cleanCSS          = require('gulp-clean-css');
 const eslint            = require('gulp-eslint');
 const npmDist           = require('gulp-npm-dist');
 const postcss           = require('gulp-postcss');
@@ -46,7 +46,10 @@ function copyVendorTask() {
  */
 function cssCleanTask() {
   return gulp
-    .src(paths.css, { read: false })
+    .src(paths.css, {
+      read: false,
+      allowEmpty: true,
+    })
     .pipe(clean());
 }
 
@@ -96,13 +99,21 @@ function sassProdTask() {
     .pipe(splitMediaQueries({
       breakpoint: 45, // 720px and above
     }))
-    .pipe(
-      purge({
-        trim: true,
-        shorten: true,
-        verbose: true,
-      }),
-    )
+    .pipe(cleanCSS({
+      compatibility: {
+        colors: {
+          opacity: true,
+        },
+        units: {
+          rem: true,
+          vh: true,
+          vm: true,
+          vmax: true,
+          vmin: true,
+        },
+      },
+      level: 2,
+    }))
     .pipe(gulp.dest(paths.css));
 }
 

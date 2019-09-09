@@ -37,7 +37,7 @@
     "eslint-plugin-import": "^2.17.3",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
-    "gulp-css-purge": "^3.0.9",
+    "gulp-clean-css": "^4.2.0",
     "gulp-eslint": "^5.0.0",
     "gulp-npm-dist": "^1.0.3",
     "gulp-penthouse": "^0.2.0",
