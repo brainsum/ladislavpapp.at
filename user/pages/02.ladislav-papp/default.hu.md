@@ -23,8 +23,8 @@ Orchestrával, a Camerata Hamburggal, valamint a Szlovák Rádió Szimfonikus
 Zenekarával. Mint kamarazenész feleségével, Justina Pappal hárfa-fuvola duót
 alkot.
 
-Papp László a hazai zenei fesztiválok mellett – Pozsonyi Zenei Ünnepségek,
-Zsolnai Közép-európai Koncertművészeti Fesztivál – szólistaként több európai
+Papp László a hazai zenei fesztiválok mellett - Pozsonyi Zenei Ünnepségek,
+Zsolnai Közép-európai Koncertművészeti Fesztivál - szólistaként több európai
 hárfafesztiválon szerepelt: 1999-ben a prágai, 2002-ben pedig a genfi World
 Harp Congress-on.
 
@@ -32,11 +32,11 @@ Harp Congress-on.
 
 ## Díjak, kitüntetések
 
-- <mark>1998\.</mark> Reinl-Preis Nemzetközi Hárfaverseny, Bécs (A) – 1. díj
+- <mark>1998\.</mark> Reinl-Preis Nemzetközi Hárfaverseny, Bécs (A) - 1. díj
 - <mark>1998\.</mark> A szlovákiai konzervatóriumok diákjainak versenye Kassa - 1. díj
 - <mark>1999\.</mark> Pozsonyi Zenei Ünnepségek (SK) - Fiatal Előadók Nemzetközi
 Seregszemléje - 1. helyezett
-- <mark>2001\.</mark> Közép-európai Koncertművészeti Fesztivál, Zsolna (SK) – Kritikusok Díja
-- <mark>2002\.</mark> Kiwanis Musikpreise für Harfe, Zürich (CH) – 1. díj
+- <mark>2001\.</mark> Közép-európai Koncertművészeti Fesztivál, Zsolna (SK) - Kritikusok Díja
+- <mark>2002\.</mark> Kiwanis Musikpreise für Harfe, Zürich (CH) - 1. díj
 
 **[Önéletrajz letöltése](Ladislav-Papp-cv-hu.pdf?target=_blank) {.download}**

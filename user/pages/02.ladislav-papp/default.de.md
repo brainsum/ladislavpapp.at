@@ -42,12 +42,12 @@ No.1_“ heraus.
 
 ## Wettbewerbe und Preise:
 
-- <mark>1998\.</mark> Reinl-Preis International Wettbewerb, Wien (A) – 1. Preis
+- <mark>1998\.</mark> Reinl-Preis International Wettbewerb, Wien (A) - 1. Preis
 - <mark>1998\.</mark> Wettbewerb des Konservatoriums in Bratislava - 1. Preis
 - <mark>1999\.</mark> Pressburger Musikfestival SK - Internationaler Wettbewerb der jungen
 Interpreten l. Preis
-- <mark>2001\.</mark> Mitteleuropäischer Festival der Konzertkunsts, Žilina (SK) –
+- <mark>2001\.</mark> Mitteleuropäischer Festival der Konzertkunsts, Žilina (SK) -
 Kritikerpreis
-- <mark>2002\.</mark> Kiwanis Musikpreis für Harfe, Zürich (CH) – 1. Preis
+- <mark>2002\.</mark> Kiwanis Musikpreis für Harfe, Zürich (CH) - 1. Preis
 
 **[Download curriculum vitae](Ladislav-Papp-cv-de.pdf?target=_blank) {.download}**

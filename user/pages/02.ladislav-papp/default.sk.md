@@ -29,11 +29,11 @@ V roku 1999 vydal svoj debutový album na CD-nosiči s názvom _Harp is my No.1_
 
 ## Ocenenia:
 
-- <mark>1998\.</mark> Reinl-Preis medzinárodná súťaž harfistov, Viedeň (A) – 1. cena
+- <mark>1998\.</mark> Reinl-Preis medzinárodná súťaž harfistov, Viedeň (A) - 1. cena
 - <mark>1998\.</mark> Súťaž poslucháčov Bratislavského konzervatória - 1. cena
 - <mark>1999\.</mark> Bratislavské hudobné slávnosti SK - medzinárodná súťaž mladých
 interpretov „titul laureáta“
-- <mark>2001\.</mark> Stredoeurópsky hudobný festival, Žilina (SK) – Cena kritikov
-- <mark>2002\.</mark> Kiwanis Musikpreise für Harfe, Zürich (CH) – 1. cena
+- <mark>2001\.</mark> Stredoeurópsky hudobný festival, Žilina (SK) - Cena kritikov
+- <mark>2002\.</mark> Kiwanis Musikpreise für Harfe, Zürich (CH) - 1. cena
 
 **[Stiahnuť životopis](Ladislav-Papp-cv-sk.pdf?target=_blank) {.download}**
