@@ -12,4 +12,4 @@ A-2232 Deutsch Wagram
 
 Tel.: <a href="tel:00436765861780">+43 676 58 61 780</a>
 
-E-mail: [ladislav@duopapp.at](mailto:ladislav@duopapp.at)
+E-mail: [ladislavpapp@hotmail.com](mailto:ladislavpapp@hotmail.com)
