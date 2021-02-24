@@ -1,3 +1,66 @@
+# v1.5.0
+## 02/18/2021
+
+1. [](#new)
+   * Updated CLI commands for latest standards
+   * Pass phpstan level 8 tests
+1. [](#improved)
+   * Add default configuration to an inherited theme's YAML file [getgrav/grav-premium-issues#50](https://github.com/getgrav/grav-premium-issues/issues/50)
+1. [](#bugfix)
+   * Output cmd does not correctly show colors [#56](https://github.com/getgrav/grav-plugin-devtools/issues/56)
+
+# v1.4.2
+## 12/02/2020
+
+1. [](#improved)
+    * User return typehints in plugin.php
+    * Add proper twig escapes into a new theme
+
+# v1.4.1
+## 05/20/2020
+
+1. [](#improved)
+    * Make name key Composer 2.0 compatible [#48](https://github.com/getgrav/grav-plugin-devtools/pull/48)
+1. [](#bugfix)
+    * Correct type for themes [#49](https://github.com/getgrav/grav-plugin-devtools/pull/49)
+
+# v1.4.0
+## 04/27/2020
+
+1. [](#new)
+    * Added new required `slug:` and `type:` attributes to blueprints
+1. [](#improved)
+    * Fixed plugin autoload
+
+# v1.3.1
+## 02/24/2020
+
+1. [](#improved)
+    * Set `validation: loose` in plugin blueprints by default
+    * Add Grav 1.6 dependency to all new plugins and themes
+
+# v1.3.0
+## 02/13/2020
+
+1. [](#improved)
+    * Added composer-based autoloader to the `new-plugin` command
+
+# v1.2.4
+## 11/06/2019
+
+1. [](#improved)
+    * Added the ability to use devtools without an online connection to GPM
+1. [](#bugfix)
+    * Regression fix for missing `theme_config` in pure-blank [#45](https://github.com/getgrav/grav-plugin-devtools/issues/45)
+
+# v1.2.3
+## 06/20/2019
+
+1. [](#improved)
+    * pure-blank: Use new 'deferred' blocks for header
+    * pure-blank: Use `home_url` variable
+    * pure-blank: Improved `README.md.twig`
+
 # v1.2.2
 ## 04/21/2019
 

@@ -1,5 +1,7 @@
 {% set githubid = component.author.githubid ?: component.author.name|hyphenize -%}
 name: {{ component.name|titleize }}
+slug: {{ component.name|hyphenize }}
+type: theme
 version: 0.1.0
 description: {{ component.description }}
 icon: rebel
@@ -12,6 +14,9 @@ keywords: grav, theme, etc
 bugs: https://github.com/{{ githubid }}/grav-theme-{{ component.name|hyphenize }}/issues
 readme: https://github.com/{{ githubid }}/grav-theme-{{ component.name|hyphenize }}/blob/develop/README.md
 license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
 
 form:
   validation: loose
